@@ -1007,101 +1007,15 @@ body {
   background-color: #FFF5F6;
 }
 
-.button-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer-btn-locations {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 10px;
-  width: 161px;
-  height: 44px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  color: #FFFFFF;
-  background-color: #D41342;
-  border-radius: 22px;
-  border: none;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-btn-locations:hover, .footer-btn-locations:focus {
-  color: #ffffff;
-  background-color: #D41342;
-}
-.footer-btn-locations::after {
-  content: "";
-  width: 6px;
-  height: 10px;
-  margin-left: 8px;
-  background-image: url(../images/icon\ vector.svg);
-}
-
-.footer-btn-franchise {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 48px;
-  width: 161px;
-  height: 44px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31;
-  color: #FFFFFF;
-  background-color: #D41342;
-  border-radius: 22px;
-  border: none;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-btn-franchise:hover, .footer-btn-franchise:focus {
-  color: #D41443;
-  background-color: #ECEBEB;
-}
-.footer-btn-franchise::after {
-  content: "";
-  width: 7px;
-  height: 10px;
-  margin-left: 8px;
-  background-image: url(../images/icon\ vector-red.svg);
-}
-
-.red {
-  background-color: #D41342;
-  color: #ffffff;
-}
-
-.white {
-  background-color: #ffffff;
-  color: #D41443;
+@media screen and (min-width: 768px) {
+  .footer-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .footer-label {
@@ -1116,6 +1030,16 @@ body {
   text-transform: uppercase;
   color: #FFA5BA;
 }
+@media screen and (min-width: 768px) {
+  .footer-label {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-label {
+    max-width: 474px;
+  }
+}
 
 .footer-title {
   max-width: 200px;
@@ -1129,6 +1053,23 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #D41443;
+}
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    max-width: 474px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer-soc-list {
@@ -1213,13 +1154,20 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 78px;
   padding-top: 16px;
   border-top: 1px solid #E1E1E1;
 }
+@media screen and (min-width: 768px) {
+  .copy {
+    height: 42px;
+    padding-top: 20px;
+  }
+}
 
 .footer-copyright {
-  width: 160px;
-  height: 50px;
+  max-width: 160px;
+  height: 42px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -1227,6 +1175,12 @@ body {
   line-height: 1.5;
   text-align: center;
   color: #907E82;
+}
+@media screen and (min-width: 768px) {
+  .footer-copyright {
+    max-width: 280px;
+    height: 26px;
+  }
 }
 
 .aside {
